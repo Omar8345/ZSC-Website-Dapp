@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/Thirdweb.module.css";
+import Image from 'next/image';
 
 type Props = {
   show: boolean;
@@ -21,7 +22,7 @@ export default function ThirdwebGuideOverlay({ show, setShow }: Props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={`/logo.png`} alt="Thirdweb Logo" width={135} />
+            <Image={`/logo.png`} alt="Thirdweb Logo" width={135} />
           </a>
         </div>
 
@@ -34,7 +35,7 @@ export default function ThirdwebGuideOverlay({ show, setShow }: Props) {
         </h1>
         <p>
           An example repository to demonstrate how to use the thirdweb SDK to
-          programatically view and deploy any of thirdweb's pre-built smart
+          programatically view and deploy any of thirdweb&apos;s pre-built smart
           contracts.
         </p>
 
