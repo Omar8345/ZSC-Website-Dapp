@@ -1,6 +1,7 @@
 import { useAddress, useMetamask, useDisconnect } from "@thirdweb-dev/react";
 import Link from "next/link";
 import React from "react";
+import Image from 'next/image';
 import styles from "../styles/Home.module.css";
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
       <div className={styles.left}>
         <div>
           <Link href="/">
-            <img
+            <Image
               src={`/logo.png`}
               alt="Thirdweb Logo"
               className={styles.headerLogo}
