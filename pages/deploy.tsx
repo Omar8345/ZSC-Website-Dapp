@@ -1,6 +1,7 @@
 import { useAddress, useMetamask, useSigner } from "@thirdweb-dev/react";
 import { ContractType, ThirdwebSDK } from "@thirdweb-dev/sdk";
 import React, { useState } from "react";
+import Image from 'next/image';
 import styles from "../styles/Home.module.css";
 import {
   contractsToShowOnDeploy as contracts,
@@ -97,7 +98,7 @@ export default function Deploy() {
                   onClick={() => deployContract(c as ContractType)}
                 >
                   <div className={styles.contractImage}>
-                    <img src={imageMapping[c as ContractType]} alt={c} />
+                    <Image src={imageMapping[c as ContractType]} alt={c} />
                   </div>
                   <b className={styles.cardName}>
                     {nameMapping[c as ContractType]}
